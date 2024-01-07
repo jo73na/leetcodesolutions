@@ -12,12 +12,9 @@ class Solution {
 				return null;
 			}
 		}
-		if (s.charAt(s.length()-1) == 'I') {
-			arr[s.length()] = max;
-		}
-		if (s.charAt(s.length()-1) == 'D') {
+		
 			arr[s.length()] = min;
-		}
+		
 
 		return arr;   
     }
