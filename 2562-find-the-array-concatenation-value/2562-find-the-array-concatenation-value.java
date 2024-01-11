@@ -15,7 +15,7 @@ class Solution {
         return res;
     }
     private int concatenate(int x,int y){
-        return Integer.parseInt(String.valueOf(x)+String.valueOf(y));
+        return Integer.parseInt(x+""+y);
     }
 
     }
