@@ -10,7 +10,7 @@ class Solution {
             res += num;
         }
         if(nums.length%2!=0){
-            res += nums[nums.length/2];
+            res += nums[i];
         }
         return res;
     }
