@@ -1,20 +1,22 @@
 class Solution {
     public int[] sortArrayByParityII(int[] A) {
-      int start = 0, end = A.length-1;
-        
-        while(start < A.length-1){
-            if(A[start]%2 == 0){
-                start += 2;
-            } else if(A[end]%2 != 0){
-                end -= 2;
-            } else {
-                int temp = A[start];
-                A[start] = A[end];
-                A[end] = temp;
-            }
-        }
-        
-        return A;
+       int n = A.length;
+	      int i = 0, j = n-1;
+	        while (i < n) {
+	            if (i%2==0 && A[i] % 2 == 0) {
+	                i+=2;
+	            }else
+	            if (j % 2 == 1 && A[j] % 2 == 1) {
+	                j -=2;
+	            }else
+	            {
+	            	 int temp = A[i];
+	     	        A[i] = A[j];
+	     	        A[j] = temp;
+	          
+	            }
+	        }
+	        return A;
     }
    
 }
