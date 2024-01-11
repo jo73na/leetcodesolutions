@@ -6,8 +6,8 @@ class Solution {
         int j= nums.length-1;
         
         while(i<j){
-            int num = concatenate(nums[i++],nums[j--]);
-            res += num;
+             res += concatenate(nums[i++],nums[j--]);
+           
         }
         if(nums.length%2!=0){
             res += nums[i];
